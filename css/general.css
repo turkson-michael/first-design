@@ -1,0 +1,87 @@
+/* typography
+
+-- font sizes (px)
+10/12/14/16/18/20/24/30/44/52/62/74/86/98
+
+
+font-weights
+defaults:400
+medium:500
+semi-bold:600
+bold:700
+
+line-heights
+Default:1
+small:1.05
+paragraph default:1.6
+
+
+--- 02 colors 
+
+-primary:#e67e22
+-tints:  #fdf2e9
+-shades: #cf711f
+-accents:
+-greys:
+#555
+
+--05 shadows
+
+---06 border- radius
+
+---- 07 whitespace
+
+
+-spacing system (px)
+2/4/8/12/16/24/32/48/64/80/96/128
+98*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625=62.5% */
+  /* percentage of user browser font-size settings */
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: #712b75;
+
+  /* background-image: linear-gradient(150deg, red, blue); */
+
+  /* overflow: hidden; */
+}
+
+/* ************************************** */
+/* General reusable  components */
+/* *************************************** */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.bottom-top {
+  margin-top: 1rem;
+}
